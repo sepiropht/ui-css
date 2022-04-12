@@ -1,0 +1,14 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "basic ui component implementation in css",
+  "main": "index.js",
+  "author": "sepiropht",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^2.4.1"
+  },
+  "scripts": {
+    "start": "parcel"
+  }
+}
