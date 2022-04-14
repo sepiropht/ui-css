@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Range</title>
+</head>
+
+<body>
+  <h1>Range</h1>
+  <div>
+    <span></span>
+  </div>
+</body>
+<script>
+  let isMoving = false;
+  let x = 0;
+  const span = document.querySelector('span')
+  span.addEventListener('mousedown', (e) => {
+    x = e.clientX
+    isMoving = true;
+  })
+  span.addEventListener('mousemove', (e) => {
+    if (isMoving === true) {
+      console.log(isMoving)
+      console.log(e.clientX)
+      console.log(span.style.left + e.clientX + "px")
+      span.style.left = span.style.left + e.clientX
+    }
+
+  })
+
+  window.addEventListener('mouseup', e => {
+    if (isMoving === true) {
+      x = 0;
+      y = 0;
+      isMoving = false;
+    }
+  });
+
+</script>
+
+</html>

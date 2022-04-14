@@ -1,0 +1,17 @@
+div {
+  width: 112px;
+  height: 47px;
+  border-bottom: 1px solid rgb(113, 112, 112);
+  position: relative;
+}
+
+span {
+  position: absolute;
+  top: 80%;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color:rgba(255, 255, 255, 0.857);
+  box-shadow: 2px 3px 3px black;
+  border: 1px solid gray;
+}
