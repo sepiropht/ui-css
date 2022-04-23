@@ -1,8 +1,11 @@
 div {
   width: 112px;
+  display: block;
+  box-sizing: border-box;
   height: 47px;
   border-bottom: 1px solid rgb(113, 112, 112);
   position: relative;
+  
 }
 
 span {
